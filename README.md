@@ -49,3 +49,17 @@ Compute F-measure by:
 python evaluate.py data/pred.kytea --answer data/test
 python evaluate.py data/pred.hmm --answer data/test
 ```
+
+# Example #
+
+## Input ##
+First two characters are input to the HMM model.
+```
+An/Analysts/blank ha/have/blank be/been/blank sa/saying/blank fo/for/blank mo/months/blank th/that/blank th/they/blank ex/expect/blank Ch/China/blank to/to/blank ra/raise/blank in/interest/blank ra/rates/blank th/throughout/blank 20/2011./blank
+```
+
+## Output ##
+```
+An/Analysts/blank ha/have/blank be/been/blank sa/sacked/blank fo/for/blank mo/more/blank th/than/blank th/the/blank ex/extensive/blank Ch/Chinese/blank to/to/blank ra/raise/blank in/interest/blank ra/rate/blank th/through/blank 20/2020./blank
+```
+The words in the center are predictions by the HMM model.
